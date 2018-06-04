@@ -53,7 +53,7 @@ $(function() {
 		isPopupOn = false;
 		$(".pop1,.pop2,.pop3,.pop4,.pop5")
 		.animate({top:"-1000px"}, 300,function(){
-			$(".pop1,.pop2,.pop3,.pop4,.pop5,.pop01_wrapper1,.pop01_wrapper2").addClass("noshow");
+			$(".pop1,.pop2,.pop3,.pop4,.pop5,.pop01_wrapper1,.pop01_wrapper2,.pop02_wrapper2,.pop02_wrapper3,.pop03_wrapper2,.pop03_wrapper3,.pop04_wrapper2,.pop04_wrapper3,.pop05_wrapper2,.pop05_wrapper3").addClass("noshow");
 		});
 		$(".pop_bg").fadeOut(500).addClass("noshow");
 		return;
@@ -718,8 +718,88 @@ $(function(){
 	$(".truck03, .truck03_h").hover(function(){$(".truck03_h").show();}, function(){$(".truck03_h").hide();});
 
 	$(".truck04, .truck04_h").hover(function(){$(".truck04_h").show();}, function(){$(".truck04_h").hide();});
+
+
 })
 
+
+// 인형 뽑기
+// 인형뽑기
+var it=0;
+// 위버튼
+$(".doll_btn_top").click(function(){
+    $(".doll_bar").animate({
+        "left": "68px",
+        "top" : "18px",
+        "width" : "4px",
+        "height": "5%"
+    })
+    $(".doll_machine").animate({
+        "left": "58px",
+        "top" : "36px",
+        "width" : "7%",
+        "height": "7%"
+    })
+    $(".doll_m_left").animate({
+        "left": "45px",
+        "top" : "58px",
+        "width" : "5%",
+        "height": "6%"
+    })
+    $(".doll_m_right").animate({
+        "left": "78px",
+        "top" : "58px",
+        "width" : "5%",
+        "height": "6%"
+    })
+})
+// 오른쪽 버튼
+$(".doll_btn_right").click(function(){
+    it+=30;
+    if (it>211) {
+        return;
+    }
+    $(".handle").animate({
+        "margin-left": it+"px"
+    })
+})
+$(".doll_btn_bottom").click(function(){
+    $(".doll_bar").animate({
+        "left": "67px",
+        "top" : "18px",
+        "width" : "6px",
+        "height": "10%"
+    })
+    $(".doll_machine").animate({
+        "left": "52px",
+        "top" : "36px",
+        "width" : "34px",
+        "height": "40px"
+    })
+    $(".doll_m_left").animate({
+        "left": "36px",
+        "top" : "69px",
+        "width" : "22px",
+        "height": "32px"
+    })
+    $(".doll_m_right").animate({
+        "left": "80px",
+        "top" : "69px",
+        "width" : "22px",
+        "height": "32px"
+    })
+})
+$(".doll_btn_left").click(function(){
+    it-=30;
+    if (it<-1) {
+        return;
+    }
+    $(".handle").animate({
+        "margin-left": it+"px"
+    })
+})
+
+// $("doll_drawer").
 
 
 

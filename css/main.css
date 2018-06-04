@@ -2682,5 +2682,11 @@ body {
 }
 
 
-
+/*///////////////////////////////////*/
+.doll_btn1{
+    cursor: pointer;
+}
+.doll_btn2 > div{
+    cursor: pointer;
+}
 
