@@ -41,11 +41,24 @@ $(function() {
   	var baseIdx = bgWidth / sceneNum;
   	var scrollIdx = [];
 
-  	for(var i=0;i<sceneNum+1;i++) {
+  	/*for(var i=0;i<sceneNum+1;i++) {
   		scrollIdx.push(baseIdx * i);
-  	}
+  	}*/
+  	scrollIdx.push(0);
+  	scrollIdx.push(1800);
+  	scrollIdx.push(3600);
+  	scrollIdx.push(5000);
+  	scrollIdx.push(6920);
 
-  	
+  	scrollBtnOn($(window).scrollLeft());
+
+  	$('.buttons > .btn > li').each(function(idx) {
+  		$(this).click(function() {
+  			$('body, html').stop().animate({scrollLeft: scrollIdx[idx]}, 500);
+  		});
+  	});
+
+
 	// //////////////////////////////////////////////////////////////////////
 	// 팝업
 	// 닫기버튼
@@ -154,19 +167,23 @@ $(function() {
   		/*
   			scroll에 따른 메뉴 활성화
   		*/
-  		for(var i=0;i<scrollIdx.length-1;i++) {
+  		scrollBtnOn(scrollLeft);
+    });
+
+    function scrollBtnOn(scrollLeft) {
+    	for(var i=0;i<scrollIdx.length-1;i++) {
   			if(scrollLeft >= scrollIdx[i] && scrollLeft < scrollIdx[i+1]) {
   				console.log(i);
   				for(var j=0;j<4;j++) {
   					if(i==j) {
-  						$('.buttons > .btn').children().eq(j+1).addClass('btn0' + (j+1)+'-on').removeClass('btn0' + (j+1));
+  						$('.buttons > .btn').children().eq(j).addClass('btn0' + (j+1)+'-on').removeClass('btn0' + (j+1));
   					} else {
-  						$('.buttons > .btn').children().eq(j+1).addClass('btn0' + (j+1)).removeClass('btn0' + (j+1)+'-on');
+  						$('.buttons > .btn').children().eq(j).addClass('btn0' + (j+1)).removeClass('btn0' + (j+1)+'-on');
   					}
   				}
   			}
   		}
-    });
+    }
 
 })
 
