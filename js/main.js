@@ -170,6 +170,10 @@ $(function() {
   		scrollBtnOn(scrollLeft);
     });
 
+    $('.sns > ul > .icon01').click(function() {
+    	window.open('./game.html', '_blank');
+    });
+
     function scrollBtnOn(scrollLeft) {
     	for(var i=0;i<scrollIdx.length-1;i++) {
   			if(scrollLeft >= scrollIdx[i] && scrollLeft < scrollIdx[i+1]) {
