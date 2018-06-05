@@ -409,7 +409,7 @@ body {
 
 .con02 {position: absolute;left: 3373px;bottom: 178px;width: 447px;height: 306px;background: url(../images/scene2/container02.png) no-repeat left center;z-index: 1;}
 
-.char04 {position: absolute;left: 3593px;bottom: 331px;width: 95px;height: 74px;z-index: 2;}
+.char04 {position: absolute;left: 3593px;bottom: 331px;width: 104px;height: 100px;z-index: 2;}
 
 .con02.road-light {position: absolute;left: 3305px;bottom: 146px;width: 70px;height: 280px;background: url(../images/main/road_light.png) no-repeat left center;z-index: 4;}
 
@@ -499,7 +499,7 @@ body {
 
 .bd03.road-light2 {position: absolute;left: 4960px;bottom: 210px;width: 90px;height: 210px;background: url(../images/main/road_light02.png) no-repeat left center;z-index: 4;}
 
-.char07 {position: absolute;left: 5010px;bottom: 150px;width: 104px;height: 100px;z-index: 5;}
+.char07 {position: absolute;left: 5010px;bottom: 150px;width: 95px;height: 74px;z-index: 5;}
 
 /*** scene4 ***/
 /*ddp*/

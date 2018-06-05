@@ -493,23 +493,24 @@ $(function(){
 
 	var cData03=["images/main/c03_1.png", "images/main/c03_2.png", "images/main/c03_3.png", "images/main/c03_4.png", "images/main/c03_5.png"];
 
-	var cData04=["images/main/c04_1.png", "images/main/c04_2.png", "images/main/c04_3.png", "images/main/c04_4.png", "images/main/c04_5.png"];
+	var cData04=["images/main/c07_1.png", "images/main/c07_2.png", "images/main/c07_3.png", "images/main/c07_4.png", "images/main/c07_5.png", "images/main/c07_6.png", "images/main/c07_7.png", "images/main/c07_8.png", "images/main/c07_9.png", "images/main/c07_10.png", "images/main/c07_11.png", "images/main/c07_12.png"];
 
 	var cData05=["images/main/c05_1.png", "images/main/c05_2.png", "images/main/c05_3.png", "images/main/c05_4.png", "images/main/c05_5.png", "images/main/c05_6.png"];
 
 	var cData06=["images/main/c06_1.png", "images/main/c06_2.png", "images/main/c06_3.png", "images/main/c06_4.png", "images/main/c06_5.png", "images/main/c06_6.png", "images/main/c06_7.png", "images/main/c06_8.png", "images/main/c06_9.png", "images/main/c06_10.png"];
 
-	var cData07=["images/main/c07_1.png", "images/main/c07_2.png", "images/main/c07_3.png", "images/main/c07_4.png", "images/main/c07_5.png", "images/main/c07_6.png", "images/main/c07_7.png", "images/main/c07_8.png", "images/main/c07_9.png", "images/main/c07_10.png", "images/main/c07_11.png", "images/main/c07_12.png"];
+	var cData07=["images/main/c04_1.png", "images/main/c04_2.png", "images/main/c04_3.png", "images/main/c04_4.png", "images/main/c04_5.png"];
 
 	var cIndex01=0;
 	var cIndex02=0;
 	var cIndex03=0;
 	var cIndex04=0;
+	var mLeft04=0;
 	var cIndex05=0;
 	var cIndex06=0;
 	var mLeft06=0;
 	var cIndex07=0;
-	var mLeft07=0;
+	
 
 	var cahr01=setInterval(function(){
 		cIndex01++;
@@ -536,11 +537,19 @@ $(function(){
 	}, 500);
 
 	var cahr04=setInterval(function(){
-		cIndex04++;
-		if(cIndex04==5){
-			cIndex04=0;
-		}	
+		if(0<=cIndex04&&cIndex04<6){
+			mLeft04-=10;
+			$(".char04 > img").animate({marginLeft: mLeft04+"px"});
+		}else if(6<=cIndex04&&cIndex04<12){
+			mLeft04+=10;
+			$(".char04 > img").animate({marginLeft: mLeft04+"px"});
+		}
 		$(".char04 > img").attr("src", cData04[cIndex04]);
+		cIndex04++;
+		if(cIndex04>11){
+			cIndex04=0;
+			mLeft04=0;
+		}
 	}, 500);
 
 	var cahr05=setInterval(function(){
@@ -568,19 +577,11 @@ $(function(){
 	}, 500);
 
 	var cahr07=setInterval(function(){
-		if(0<=cIndex07&&cIndex07<6){
-			mLeft07-=10;
-			$(".char07 > img").animate({marginLeft: mLeft07+"px"});
-		}else if(6<=cIndex07&&cIndex07<12){
-			mLeft07+=10;
-			$(".char07 > img").animate({marginLeft: mLeft07+"px"});
-		}
-		$(".char07 > img").attr("src", cData07[cIndex07]);
 		cIndex07++;
-		if(cIndex07>11){
+		if(cIndex07==5){
 			cIndex07=0;
-			mLeft07=0;
-		}
+		}	
+		$(".char07 > img").attr("src", cData07[cIndex07]);
 	}, 500);
 
 	/*firework move*/
