@@ -169,7 +169,7 @@ body {
 
 .bd01-door01 {position: absolute;left: 0;bottom: 0;width: 72px;height: 152px;background-color: black;z-index: 2;color: white;font-size: 16px;text-align: center;display: table;}
 
-.bd01-door01 p {display: table-cell;vertical-align: middle;line-height: 25px;letter-spacing: 2px;}
+.bd01-door01 p {display: table-cell;vertical-align: middle;line-height: 20px;letter-spacing: 2px;}
 
 .bd01-door02 {position: absolute;left: 0;bottom: 0;width: 72px;height: 152px;background: url(../images/scene1/bd01_door.png) no-repeat left center;z-index: 3;}
 
@@ -1213,33 +1213,35 @@ body {
 
 }
 #pop02 > .pop02_wrapper2 > .pop_body > p:nth-child(2){
-    color: #fff;
+    color: #dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
     margin-top: 40px;
 }
 #pop02 > .pop02_wrapper2 > .pop_body > p span{
     color: #c2a549;
-    
+    margin-right:4px;
+    font-weight:bold;
 }
 #pop02 .pop02_wrapper2 .pop_body >p:nth-child(3){
-    color: #fff;
+    color: #dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
     margin-top: 20px;
 }
 #pop02 .pop02_wrapper2 .pop_body >p:nth-child(4){
+    color:#dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
     margin-top: 5px;
 }
 #pop02 .pop02_wrapper2 .pop_body >p:nth-child(5){
     color: #dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
     margin-top: 20px;
 }
@@ -1367,9 +1369,13 @@ body {
     border-left: 0;
 }
 
+#pop02 .pop02_wrapper3 .pop_body .t_head{
+    font-size:15px;
+}
 
 
-/*pop03*/
+
+    /*pop03*/
 .pop3{
      position: fixed;
     width: 1920px;
@@ -1656,33 +1662,36 @@ body {
 
 }
 #pop03 > .pop03_wrapper2 > .pop_body > p:nth-child(2){
-    color: #fff;
+    color: #dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
     margin-top: 40px;
 }
 #pop03 > .pop03_wrapper2 > .pop_body > p span{
     color: #c2a549;
+    margin-right:4px;
+    font-weight:bold;
     
 }
 #pop03 .pop03_wrapper2 .pop_body >p:nth-child(3){
-    color: #fff;
+    color: #dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
     margin-top: 20px;
 }
 #pop03 .pop03_wrapper2 .pop_body >p:nth-child(4){
+    color:#dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
     margin-top: 5px;
 }
 #pop03 .pop03_wrapper2 .pop_body >p:nth-child(5){
     color: #dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
     margin-top: 20px;
 }
@@ -1808,6 +1817,10 @@ body {
 }
 #pop03 .pop03_wrapper3 .pop_body > .stadium_table tr th:first-child{
     border-left: 0;
+}
+
+#pop03 .pop03_wrapper3 .pop_body .t_head{
+    font-size:15px;
 }
 
 
@@ -2098,35 +2111,46 @@ body {
 
 }
 #pop04 > .pop04_wrapper2 > .pop_body > p:nth-child(2){
-    color: #fff;
+    color: #dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
-    margin-top: 40px;
+    margin-top: 30px;
 }
 #pop04 > .pop04_wrapper2 > .pop_body > p span{
     color: #c2a549;
+    margin-right:4px;
+    font-weight:bold;
     
 }
 #pop04 .pop04_wrapper2 .pop_body >p:nth-child(3){
-    color: #fff;
+    color: #dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
     margin-top: 20px;
 }
 #pop04 .pop04_wrapper2 .pop_body >p:nth-child(4){
+    color:#dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
     margin-top: 5px;
 }
 #pop04 .pop04_wrapper2 .pop_body >p:nth-child(5){
     color: #dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
     margin-top: 20px;
+}
+
+#pop04 .pop04_wrapper2 .pop_body >p:nth-child(6){
+    color: #dadada;
+    letter-spacing: -0.01em;
+    font-size: 16px;
+    font-family: "SandollGothicL";
+    margin-top: 5px;
 }
 
 /*pop04 > wrapper3*/
@@ -2250,6 +2274,10 @@ body {
 }
 #pop04 .pop04_wrapper3 .pop_body > .stadium_table tr th:first-child{
     border-left: 0;
+}
+
+#pop04 .pop04_wrapper3 .pop_body .t_head{
+    font-size:15px;
 }
 
 /*pop05*/
@@ -2539,33 +2567,36 @@ body {
 
 }
 #pop05 > .pop05_wrapper2 > .pop_body > p:nth-child(2){
-    color: #fff;
+    color: #dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
     margin-top: 40px;
 }
 #pop05 > .pop05_wrapper2 > .pop_body > p span{
     color: #c2a549;
+    margin-right:4px;
+    font-weight:bold;
     
 }
 #pop05 .pop05_wrapper2 .pop_body >p:nth-child(3){
-    color: #fff;
+    color: #dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
     margin-top: 20px;
 }
 #pop05 .pop05_wrapper2 .pop_body >p:nth-child(4){
+    color:#dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
     margin-top: 5px;
 }
 #pop05 .pop05_wrapper2 .pop_body >p:nth-child(5){
     color: #dadada;
     letter-spacing: -0.01em;
-    font-size: 14px;
+    font-size: 16px;
     font-family: "SandollGothicL";
     margin-top: 20px;
 }
@@ -2693,6 +2724,9 @@ body {
     border-left: 0;
 }
 
+#pop05 .pop05_wrapper3 .pop_body .t_head{
+    font-size:15px;
+}
 
 
 
