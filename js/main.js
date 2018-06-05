@@ -484,7 +484,7 @@ $(function(){
 	setInterval(windowOnOff, 3000);
 		
 	/*con01_door move*/
-	$(".con01_h, .con01_detail").hover(function(){$(".con01_door").stop().animate({marginLeft:"45px"});}, function(){$(".con01_door").stop().animate({marginLeft:"0px"});});
+	$(".con01_h, .con01_detail, .con01_door").hover(function(){$(".con01_door").stop().animate({marginLeft:"45px"});}, function(){$(".con01_door").stop().animate({marginLeft:"0px"});});
 
 	/*char move*/
 	var cData01=["images/main/c01_1.png", "images/main/c01_2.png", "images/main/c01_3.png", "images/main/c01_4.png", "images/main/c01_5.png"];
