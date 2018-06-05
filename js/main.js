@@ -606,6 +606,9 @@ $(function(){
 	var index11=0;
 	var index12=0;
 	var index13=0;
+	var index14=0;
+	var index15=0;
+	var index16=0;
 
 	var fw01=setInterval(function(){
 		index01++;
@@ -709,6 +712,30 @@ $(function(){
 			index13=0;
 		}
 		$(".fw13 > img").attr("src", data04[index13]);
+	}, 100);
+
+	var fw14=setInterval(function(){
+		index14++;
+		if(index14==16){
+			index14=0;
+		}
+		$(".fw14 > img").attr("src", data02[index14]);
+	}, 100);
+
+	var fw15=setInterval(function(){
+		index15++;
+		if(index15==13){
+			index15=0;
+		}
+		$(".fw15 > img").attr("src", data04[index15]);
+	}, 100);
+
+	var fw16=setInterval(function(){
+		index16++;
+		if(index16==15){
+			index16=0;
+		}
+		$(".fw16 > img").attr("src", data01[index16]);
 	}, 100);
 
 	/*truck hover effect*/
