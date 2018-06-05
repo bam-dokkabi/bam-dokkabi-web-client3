@@ -562,7 +562,7 @@ body {
 
 .movie_neon01 {position: absolute;left: 0;bottom: 100px;width: 489px;height: 233px;background: url(../images/scene4/movie_neon1.png) no-repeat left center;z-index: 2;}
 
-.movie_neon02 {position: absolute;left: 0;bottom: 100px;width: 489px;height: 233px;background: url(../images/scene4/movie_neon2.png) no-repeat left center;z-index: 3;animation-name: neonAni;animation-duration: 0.8s;animation-timing-function: linear;animation-iteration-count: infinite;animation-direction: alternate;}
+.movie_neon02 {position: absolute;left: 0;bottom: 100px;width: 489px;height: 233px;background: url(../images/scene4/movie_neon2.png) no-repeat left center;z-index: 3;animation-name: neonAni;animation-duration: 1s;animation-timing-function: ease-in-out;animation-iteration-count: infinite;animation-direction: alternate;}
 
 .movie_clip {position: absolute;left: 30px;bottom: 128px;width: 432px;height: 178px;background: url(../images/scene4/movie_character.png) no-repeat left center;z-index: 4;}
 
