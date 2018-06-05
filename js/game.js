@@ -215,11 +215,11 @@ $(document).ready(function() {
 	var life = 3;
 	var skillBar = 0;
 	var skillBarSize = {width:240, height:12};
-	var skillBarDiff = 20;
+	var skillBarDiff = 3;
 	var timeMin = 3;
 	var timeSec = 0;
 	var monsterKills = 0;
-	var monsterKillMax = 2;
+	var monsterKillMax = 30;
 	var isPlaying = true;
 	var showGameOver = false;
 	var completeGameOver = false;
@@ -1343,13 +1343,17 @@ $(document).ready(function() {
 					bossKill++;
 
 					if(bossKill > 0) {
-						if(mainStageIdx == 3) {
+						if(mainStageIdx == 0) {
 							scene = 3;
 							context.fillStyle = "white";
 							context.font = "20px DoHyeon";
 							context.textAlign = "center";
 							context.textBaseline = "center";
 							context.fillText("VICTORY!", screenWidth/2, screenHeight/2);
+							context.fillStyle = "white";
+							context.font = "16px SandollGothicM";
+							context.textBaseline = "center";
+							context.fillText("Stage가 추가 될 예정입니다.", screenWidth/2, screenHeight/2 + 30);
 						}
 						goNextStage();
 						console.log('endingBossStage true');
@@ -1487,7 +1491,7 @@ $(document).ready(function() {
 				isBossStage = false;
 				mainStageIdx++;
 				subStageIdx = 0;
-				showingMainStage = true;
+				//showingMainStage = true;
 				if(mainStageIdx==1) {
 					monsterStats[0].adjustedSpeed = monsterStats[0].speed * 1.2;
 					monsterStats[1].adjustedSpeed = monsterStats[1].speed * 1.2;
