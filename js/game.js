@@ -1760,6 +1760,7 @@ $(document).ready(function() {
 			}, 300);
 			setTimeout(function() {
 				isShootingForks = false;
+				usingSkill = false;
 				clearInterval(skill1IntervalId);
 			}, 3000);
 		} else if(cursorIdx == 2) {
