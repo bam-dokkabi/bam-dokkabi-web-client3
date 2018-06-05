@@ -90,6 +90,20 @@ body {
 
 .market_detail {font-size: 14px;color: white;font-family: "SandollGothicB";line-height: 20px;}
 
+.all_cover{position: fixed; background-color: rgba(0,0,0,0.6); top: 0;left: 0;right: 0;bottom: 0; text-align: center;vertical-align: middle; z-index: 99999; padding-top:350px;
+cursor: pointer;}
+.all_cover>div{margin-top: 50px;}
+.all_cover>div>img{margin-bottom: 50px;}
+.all_cover>div>p{font-family: "SandollGothicL"; font-size: 24px; letter-spacing: -0.1em; line-height: 36px; color: white;}
+.all_cover>.cover_click{width: 122px; height: 50px; font-size: 24px; margin: 40px auto 0; background-color: #b48734;}
+.all_cover>.cover_click>p{
+    font-family: "SandollGothicB";
+    font-size: 24px;
+    line-height: center;
+    padding-top: 10px;
+}
+
+
 /*sns*/
 
 .sns {position: absolute;left: 1065px;top: 18px;width: 650px;height: 46px;z-index: 1;float:right;}
