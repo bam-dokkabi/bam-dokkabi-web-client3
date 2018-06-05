@@ -174,6 +174,38 @@ $(function() {
     	window.open('./game.html', '_blank');
     });
 
+    $('#map1').css('z-index', 1000);
+
+    var map1 = document.getElementById('map1');
+    var map2 = document.getElementById('map2');
+    var map3 = document.getElementById('map3');
+    var map4 = document.getElementById('map4');
+
+    var options1 = {
+    	center: new daum.maps.LatLng(37.5709900,126.89413200000001),
+    	level: 4
+    };
+
+    var options2 = {
+    	center: new daum.maps.LatLng(37.5308161,126.9283643),
+    	level: 4
+    };
+
+    var options3 = {
+    	center: new daum.maps.LatLng(37.5691135,126.98116449999998),
+    	level: 4
+    };
+
+    var options4 = {
+    	center: new daum.maps.LatLng(37.566725,127.00950599999999),
+    	level: 4
+    };
+
+    var map1 = new daum.maps.Map(map1, options1);
+    var map2 = new daum.maps.Map(map2, options2);
+    var map3 = new daum.maps.Map(map3, options3);
+    var map4 = new daum.maps.Map(map4, options4);
+
     function scrollBtnOn(scrollLeft) {
     	for(var i=0;i<scrollIdx.length-1;i++) {
   			if(scrollLeft >= scrollIdx[i] && scrollLeft < scrollIdx[i+1]) {
@@ -189,237 +221,242 @@ $(function() {
   		}
     }
 
+    // 각각 카테고리  이동하기	
+	// pop02 -wrapper1
+	$(".pop02_wrapper1>.pop_header>ul>li:nth-child(1)>p").click(function(){
+		$(".pop02_wrapper2,.pop02_wrapper3").addClass("noshow");
+		$(".pop02_wrapper1").removeClass("noshow");	
+	})
+	$(".pop02_wrapper1>.pop_header>ul>li:nth-child(2)>p").click(function(){
+		$(".pop02_wrapper1,.pop02_wrapper3").addClass("noshow");
+		$(".pop02_wrapper2").removeClass("noshow");
+		map1.relayout();
+	})
+	$(".pop02_wrapper1>.pop_header>ul>li:nth-child(3)>p").click(function(){
+		$(".pop02_wrapper1,.pop02_wrapper2").addClass("noshow");
+		$(".pop02_wrapper3").removeClass("noshow");
+	})
+	// wrapper2
+	$(".pop02_wrapper2>.pop_header>ul>li:nth-child(1)>p").click(function(){
+		$(".pop02_wrapper2,.pop02_wrapper3").addClass("noshow");
+		$(".pop02_wrapper1").removeClass("noshow");	
+	})
+	$(".pop02_wrapper2>.pop_header>ul>li:nth-child(2)>p").click(function(){
+		$(".pop02_wrapper1,.pop02_wrapper3").addClass("noshow");
+		$(".pop02_wrapper2").removeClass("noshow");
+	})
+	$(".pop02_wrapper2>.pop_header>ul>li:nth-child(3)>p").click(function(){
+		$(".pop02_wrapper1,.pop02_wrapper2").addClass("noshow");
+		$(".pop02_wrapper3").removeClass("noshow");
+	})
+	// wrapper3
+	$(".pop02_wrapper3>.pop_header>ul>li:nth-child(1)>p").click(function(){
+		$(".pop02_wrapper2,.pop02_wrapper3").addClass("noshow");
+		$(".pop02_wrapper1").removeClass("noshow");	
+	})
+	$(".pop02_wrapper3>.pop_header>ul>li:nth-child(2)>p").click(function(){
+		$(".pop02_wrapper1,.pop02_wrapper3").addClass("noshow");
+		$(".pop02_wrapper2").removeClass("noshow");
+	})
+	$(".pop02_wrapper3>.pop_header>ul>li:nth-child(3)>p").click(function(){
+		$(".pop02_wrapper1,.pop02_wrapper2").addClass("noshow");
+		$(".pop02_wrapper3").removeClass("noshow");
+	})
+
+	// pop03 -wrapper1
+	$(".pop03_wrapper1>.pop_header>ul>li:nth-child(1)>p").click(function(){
+		$(".pop03_wrapper2,.pop03_wrapper3").addClass("noshow");
+		$(".pop03_wrapper1").removeClass("noshow");	
+	})
+	$(".pop03_wrapper1>.pop_header>ul>li:nth-child(2)>p").click(function(){
+		$(".pop03_wrapper1,.pop03_wrapper3").addClass("noshow");
+		$(".pop03_wrapper2").removeClass("noshow");
+		map2.relayout();
+	})
+	$(".pop03_wrapper1>.pop_header>ul>li:nth-child(3)>p").click(function(){
+		$(".pop03_wrapper1,.pop03_wrapper2").addClass("noshow");
+		$(".pop03_wrapper3").removeClass("noshow");
+	})
+	// wrapper2
+	$(".pop03_wrapper2>.pop_header>ul>li:nth-child(1)>p").click(function(){
+		$(".pop03_wrapper2,.pop03_wrapper3").addClass("noshow");
+		$(".pop03_wrapper1").removeClass("noshow");	
+	})
+	$(".pop03_wrapper2>.pop_header>ul>li:nth-child(2)>p").click(function(){
+		$(".pop03_wrapper1,.pop03_wrapper3").addClass("noshow");
+		$(".pop03_wrapper2").removeClass("noshow");
+	})
+	$(".pop03_wrapper2>.pop_header>ul>li:nth-child(3)>p").click(function(){
+		$(".pop03_wrapper1,.pop03_wrapper2").addClass("noshow");
+		$(".pop03_wrapper3").removeClass("noshow");
+	})
+	// wrapper3
+	$(".pop03_wrapper3>.pop_header>ul>li:nth-child(1)>p").click(function(){
+		$(".pop03_wrapper2,.pop03_wrapper3").addClass("noshow");
+		$(".pop03_wrapper1").removeClass("noshow");	
+	})
+	$(".pop03_wrapper3>.pop_header>ul>li:nth-child(2)>p").click(function(){
+		$(".pop03_wrapper1,.pop03_wrapper3").addClass("noshow");
+		$(".pop03_wrapper2").removeClass("noshow");
+	})
+	$(".pop03_wrapper3>.pop_header>ul>li:nth-child(3)>p").click(function(){
+		$(".pop03_wrapper1,.pop03_wrapper2").addClass("noshow");
+		$(".pop03_wrapper3").removeClass("noshow");
+	})
+
+	// pop04 -wrapper1
+	$(".pop04_wrapper1>.pop_header>ul>li:nth-child(1)>p").click(function(){
+		$(".pop04_wrapper2,.pop04_wrapper3").addClass("noshow");
+		$(".pop04_wrapper1").removeClass("noshow");	
+	})
+	$(".pop04_wrapper1>.pop_header>ul>li:nth-child(2)>p").click(function(){
+		$(".pop04_wrapper1,.pop04_wrapper3").addClass("noshow");
+		$(".pop04_wrapper2").removeClass("noshow");
+		map3.relayout();
+	})
+	$(".pop04_wrapper1>.pop_header>ul>li:nth-child(3)>p").click(function(){
+		$(".pop04_wrapper1,.pop04_wrapper2").addClass("noshow");
+		$(".pop04_wrapper3").removeClass("noshow");
+	})
+	// wrapper2
+	$(".pop04_wrapper2>.pop_header>ul>li:nth-child(1)>p").click(function(){
+		$(".pop04_wrapper2,.pop04_wrapper3").addClass("noshow");
+		$(".pop04_wrapper1").removeClass("noshow");	
+	})
+	$(".pop04_wrapper2>.pop_header>ul>li:nth-child(2)>p").click(function(){
+		$(".pop04_wrapper1,.pop04_wrapper3").addClass("noshow");
+		$(".pop04_wrapper2").removeClass("noshow");
+	})
+	$(".pop04_wrapper2>.pop_header>ul>li:nth-child(3)>p").click(function(){
+		$(".pop04_wrapper1,.pop04_wrapper2").addClass("noshow");
+		$(".pop04_wrapper3").removeClass("noshow");
+	})
+	// wrapper3
+	$(".pop04_wrapper3>.pop_header>ul>li:nth-child(1)>p").click(function(){
+		$(".pop04_wrapper2,.pop04_wrapper3").addClass("noshow");
+		$(".pop04_wrapper1").removeClass("noshow");	
+	})
+	$(".pop04_wrapper3>.pop_header>ul>li:nth-child(2)>p").click(function(){
+		$(".pop04_wrapper1,.pop04_wrapper3").addClass("noshow");
+		$(".pop04_wrapper2").removeClass("noshow");
+	})
+	$(".pop04_wrapper3>.pop_header>ul>li:nth-child(3)>p").click(function(){
+		$(".pop04_wrapper1,.pop04_wrapper2").addClass("noshow");
+		$(".pop04_wrapper3").removeClass("noshow");
+	})
+
+	// pop05 -wrapper1
+	$(".pop05_wrapper1>.pop_header>ul>li:nth-child(1)>p").click(function(){
+		$(".pop05_wrapper2,.pop05_wrapper3").addClass("noshow");
+		$(".pop05_wrapper1").removeClass("noshow");	
+	})
+	$(".pop05_wrapper1>.pop_header>ul>li:nth-child(2)>p").click(function(){
+		$(".pop05_wrapper1,.pop05_wrapper3").addClass("noshow");
+		$(".pop05_wrapper2").removeClass("noshow");
+		map4.relayout();
+	})
+	$(".pop05_wrapper1>.pop_header>ul>li:nth-child(3)>p").click(function(){
+		$(".pop05_wrapper1,.pop05_wrapper2").addClass("noshow");
+		$(".pop05_wrapper3").removeClass("noshow");
+	})
+	// wrapper2
+	$(".pop05_wrapper2>.pop_header>ul>li:nth-child(1)>p").click(function(){
+		$(".pop05_wrapper2,.pop05_wrapper3").addClass("noshow");
+		$(".pop05_wrapper1").removeClass("noshow");	
+	})
+	$(".pop05_wrapper2>.pop_header>ul>li:nth-child(2)>p").click(function(){
+		$(".pop05_wrapper1,.pop05_wrapper3").addClass("noshow");
+		$(".pop05_wrapper2").removeClass("noshow");
+	})
+	$(".pop05_wrapper2>.pop_header>ul>li:nth-child(3)>p").click(function(){
+		$(".pop05_wrapper1,.pop05_wrapper2").addClass("noshow");
+		$(".pop05_wrapper3").removeClass("noshow");
+	})
+	// wrapper3
+	$(".pop05_wrapper3>.pop_header>ul>li:nth-child(1)>p").click(function(){
+		$(".pop05_wrapper2,.pop05_wrapper3").addClass("noshow");
+		$(".pop05_wrapper1").removeClass("noshow");	
+	})
+	$(".pop05_wrapper3>.pop_header>ul>li:nth-child(2)>p").click(function(){
+		$(".pop05_wrapper1,.pop05_wrapper3").addClass("noshow");
+		$(".pop05_wrapper2").removeClass("noshow");
+	})
+	$(".pop05_wrapper3>.pop_header>ul>li:nth-child(3)>p").click(function(){
+		$(".pop05_wrapper1,.pop05_wrapper2").addClass("noshow");
+		$(".pop05_wrapper3").removeClass("noshow");
+	})
+
+
+
+	// // 문화비축기지 버튼
+	$(".pop02_btn1").click(function(){
+		return;
+	})
+	$(".pop02_btn2").click(function(){
+		$(".pop3").removeClass("noshow").css("top","0px");
+		$(".pop2").addClass("noshow").css("top","-1000px");
+	})
+	$(".pop02_btn3").click(function(){
+		$(".pop4").removeClass("noshow").css("top","0px");
+		$(".pop2").addClass("noshow").css("top","-1000px");
+	})
+	$(".pop02_btn4").click(function(){
+		$(".pop5").removeClass("noshow").css("top","0px");
+		$(".pop2").addClass("noshow").css("top","-1000px");	
+	})
+	// // 여의도 버튼
+	$(".pop03_btn1").click(function(){
+		$(".pop2").removeClass("noshow").css("top","0px");
+		$(".pop3").addClass("noshow").css("top","-1000px");
+	})
+	$(".pop03_btn2").click(function(){
+		return;
+	})
+	$(".pop03_btn3").click(function(){
+		$(".pop4").removeClass("noshow").css("top","0px");
+		$(".pop3").addClass("noshow").css("top","-1000px");
+	})
+	$(".pop03_btn4").click(function(){
+		$(".pop5").removeClass("noshow").css("top","0px");
+		$(".pop3").addClass("noshow").css("top","-1000px");	
+	})
+	// // 청계천 버튼
+	$(".pop04_btn1").click(function(){
+		$(".pop2").removeClass("noshow").css("top","0px");
+		$(".pop4").addClass("noshow").css("top","-1000px");
+	})
+	$(".pop04_btn2").click(function(){
+		$(".pop3").removeClass("noshow").css("top","0px");
+		$(".pop4").addClass("noshow").css("top","-1000px");
+	})
+	$(".pop04_btn3").click(function(){
+		return;		
+	})
+	$(".pop04_btn4").click(function(){
+		$(".pop5").removeClass("noshow").css("top","0px");
+		$(".pop4").addClass("noshow").css("top","-1000px");	
+	})
+	// // DDP 버튼
+	$(".pop05_btn1").click(function(){
+		$(".pop2").removeClass("noshow").css("top","0px");
+		$(".pop5").addClass("noshow").css("top","-1000px");
+	})
+	$(".pop05_btn2").click(function(){
+		$(".pop3").removeClass("noshow").css("top","0px");
+		$(".pop5").addClass("noshow").css("top","-1000px");
+	})
+	$(".pop05_btn3").click(function(){
+		$(".pop4").removeClass("noshow").css("top","0px");
+		$(".pop5").addClass("noshow").css("top","-1000px");
+	})
+	$(".pop05_btn4").click(function(){
+		return;
+	})
 })
 
 // //////////////// //////////////// //////////////// //////////////// //////////////// //////////////
 	$(function(){	
-		// 각각 카테고리  이동하기	
-		// pop02 -wrapper1
-		$(".pop02_wrapper1>.pop_header>ul>li:nth-child(1)>p").click(function(){
-			$(".pop02_wrapper2,.pop02_wrapper3").addClass("noshow");
-			$(".pop02_wrapper1").removeClass("noshow");	
-		})
-		$(".pop02_wrapper1>.pop_header>ul>li:nth-child(2)>p").click(function(){
-			$(".pop02_wrapper1,.pop02_wrapper3").addClass("noshow");
-			$(".pop02_wrapper2").removeClass("noshow");
-		})
-		$(".pop02_wrapper1>.pop_header>ul>li:nth-child(3)>p").click(function(){
-			$(".pop02_wrapper1,.pop02_wrapper2").addClass("noshow");
-			$(".pop02_wrapper3").removeClass("noshow");
-		})
-		// wrapper2
-		$(".pop02_wrapper2>.pop_header>ul>li:nth-child(1)>p").click(function(){
-			$(".pop02_wrapper2,.pop02_wrapper3").addClass("noshow");
-			$(".pop02_wrapper1").removeClass("noshow");	
-		})
-		$(".pop02_wrapper2>.pop_header>ul>li:nth-child(2)>p").click(function(){
-			$(".pop02_wrapper1,.pop02_wrapper3").addClass("noshow");
-			$(".pop02_wrapper2").removeClass("noshow");
-		})
-		$(".pop02_wrapper2>.pop_header>ul>li:nth-child(3)>p").click(function(){
-			$(".pop02_wrapper1,.pop02_wrapper2").addClass("noshow");
-			$(".pop02_wrapper3").removeClass("noshow");
-		})
-		// wrapper3
-		$(".pop02_wrapper3>.pop_header>ul>li:nth-child(1)>p").click(function(){
-			$(".pop02_wrapper2,.pop02_wrapper3").addClass("noshow");
-			$(".pop02_wrapper1").removeClass("noshow");	
-		})
-		$(".pop02_wrapper3>.pop_header>ul>li:nth-child(2)>p").click(function(){
-			$(".pop02_wrapper1,.pop02_wrapper3").addClass("noshow");
-			$(".pop02_wrapper2").removeClass("noshow");
-		})
-		$(".pop02_wrapper3>.pop_header>ul>li:nth-child(3)>p").click(function(){
-			$(".pop02_wrapper1,.pop02_wrapper2").addClass("noshow");
-			$(".pop02_wrapper3").removeClass("noshow");
-		})
-	
-		// pop03 -wrapper1
-		$(".pop03_wrapper1>.pop_header>ul>li:nth-child(1)>p").click(function(){
-			$(".pop03_wrapper2,.pop03_wrapper3").addClass("noshow");
-			$(".pop03_wrapper1").removeClass("noshow");	
-		})
-		$(".pop03_wrapper1>.pop_header>ul>li:nth-child(2)>p").click(function(){
-			$(".pop03_wrapper1,.pop03_wrapper3").addClass("noshow");
-			$(".pop03_wrapper2").removeClass("noshow");
-		})
-		$(".pop03_wrapper1>.pop_header>ul>li:nth-child(3)>p").click(function(){
-			$(".pop03_wrapper1,.pop03_wrapper2").addClass("noshow");
-			$(".pop03_wrapper3").removeClass("noshow");
-		})
-		// wrapper2
-		$(".pop03_wrapper2>.pop_header>ul>li:nth-child(1)>p").click(function(){
-			$(".pop03_wrapper2,.pop03_wrapper3").addClass("noshow");
-			$(".pop03_wrapper1").removeClass("noshow");	
-		})
-		$(".pop03_wrapper2>.pop_header>ul>li:nth-child(2)>p").click(function(){
-			$(".pop03_wrapper1,.pop03_wrapper3").addClass("noshow");
-			$(".pop03_wrapper2").removeClass("noshow");
-		})
-		$(".pop03_wrapper2>.pop_header>ul>li:nth-child(3)>p").click(function(){
-			$(".pop03_wrapper1,.pop03_wrapper2").addClass("noshow");
-			$(".pop03_wrapper3").removeClass("noshow");
-		})
-		// wrapper3
-		$(".pop03_wrapper3>.pop_header>ul>li:nth-child(1)>p").click(function(){
-			$(".pop03_wrapper2,.pop03_wrapper3").addClass("noshow");
-			$(".pop03_wrapper1").removeClass("noshow");	
-		})
-		$(".pop03_wrapper3>.pop_header>ul>li:nth-child(2)>p").click(function(){
-			$(".pop03_wrapper1,.pop03_wrapper3").addClass("noshow");
-			$(".pop03_wrapper2").removeClass("noshow");
-		})
-		$(".pop03_wrapper3>.pop_header>ul>li:nth-child(3)>p").click(function(){
-			$(".pop03_wrapper1,.pop03_wrapper2").addClass("noshow");
-			$(".pop03_wrapper3").removeClass("noshow");
-		})
-	
-		// pop04 -wrapper1
-		$(".pop04_wrapper1>.pop_header>ul>li:nth-child(1)>p").click(function(){
-			$(".pop04_wrapper2,.pop04_wrapper3").addClass("noshow");
-			$(".pop04_wrapper1").removeClass("noshow");	
-		})
-		$(".pop04_wrapper1>.pop_header>ul>li:nth-child(2)>p").click(function(){
-			$(".pop04_wrapper1,.pop04_wrapper3").addClass("noshow");
-			$(".pop04_wrapper2").removeClass("noshow");
-		})
-		$(".pop04_wrapper1>.pop_header>ul>li:nth-child(3)>p").click(function(){
-			$(".pop04_wrapper1,.pop04_wrapper2").addClass("noshow");
-			$(".pop04_wrapper3").removeClass("noshow");
-		})
-		// wrapper2
-		$(".pop04_wrapper2>.pop_header>ul>li:nth-child(1)>p").click(function(){
-			$(".pop04_wrapper2,.pop04_wrapper3").addClass("noshow");
-			$(".pop04_wrapper1").removeClass("noshow");	
-		})
-		$(".pop04_wrapper2>.pop_header>ul>li:nth-child(2)>p").click(function(){
-			$(".pop04_wrapper1,.pop04_wrapper3").addClass("noshow");
-			$(".pop04_wrapper2").removeClass("noshow");
-		})
-		$(".pop04_wrapper2>.pop_header>ul>li:nth-child(3)>p").click(function(){
-			$(".pop04_wrapper1,.pop04_wrapper2").addClass("noshow");
-			$(".pop04_wrapper3").removeClass("noshow");
-		})
-		// wrapper3
-		$(".pop04_wrapper3>.pop_header>ul>li:nth-child(1)>p").click(function(){
-			$(".pop04_wrapper2,.pop04_wrapper3").addClass("noshow");
-			$(".pop04_wrapper1").removeClass("noshow");	
-		})
-		$(".pop04_wrapper3>.pop_header>ul>li:nth-child(2)>p").click(function(){
-			$(".pop04_wrapper1,.pop04_wrapper3").addClass("noshow");
-			$(".pop04_wrapper2").removeClass("noshow");
-		})
-		$(".pop04_wrapper3>.pop_header>ul>li:nth-child(3)>p").click(function(){
-			$(".pop04_wrapper1,.pop04_wrapper2").addClass("noshow");
-			$(".pop04_wrapper3").removeClass("noshow");
-		})
-	
-		// pop05 -wrapper1
-		$(".pop05_wrapper1>.pop_header>ul>li:nth-child(1)>p").click(function(){
-			$(".pop05_wrapper2,.pop05_wrapper3").addClass("noshow");
-			$(".pop05_wrapper1").removeClass("noshow");	
-		})
-		$(".pop05_wrapper1>.pop_header>ul>li:nth-child(2)>p").click(function(){
-			$(".pop05_wrapper1,.pop05_wrapper3").addClass("noshow");
-			$(".pop05_wrapper2").removeClass("noshow");
-		})
-		$(".pop05_wrapper1>.pop_header>ul>li:nth-child(3)>p").click(function(){
-			$(".pop05_wrapper1,.pop05_wrapper2").addClass("noshow");
-			$(".pop05_wrapper3").removeClass("noshow");
-		})
-		// wrapper2
-		$(".pop05_wrapper2>.pop_header>ul>li:nth-child(1)>p").click(function(){
-			$(".pop05_wrapper2,.pop05_wrapper3").addClass("noshow");
-			$(".pop05_wrapper1").removeClass("noshow");	
-		})
-		$(".pop05_wrapper2>.pop_header>ul>li:nth-child(2)>p").click(function(){
-			$(".pop05_wrapper1,.pop05_wrapper3").addClass("noshow");
-			$(".pop05_wrapper2").removeClass("noshow");
-		})
-		$(".pop05_wrapper2>.pop_header>ul>li:nth-child(3)>p").click(function(){
-			$(".pop05_wrapper1,.pop05_wrapper2").addClass("noshow");
-			$(".pop05_wrapper3").removeClass("noshow");
-		})
-		// wrapper3
-		$(".pop05_wrapper3>.pop_header>ul>li:nth-child(1)>p").click(function(){
-			$(".pop05_wrapper2,.pop05_wrapper3").addClass("noshow");
-			$(".pop05_wrapper1").removeClass("noshow");	
-		})
-		$(".pop05_wrapper3>.pop_header>ul>li:nth-child(2)>p").click(function(){
-			$(".pop05_wrapper1,.pop05_wrapper3").addClass("noshow");
-			$(".pop05_wrapper2").removeClass("noshow");
-		})
-		$(".pop05_wrapper3>.pop_header>ul>li:nth-child(3)>p").click(function(){
-			$(".pop05_wrapper1,.pop05_wrapper2").addClass("noshow");
-			$(".pop05_wrapper3").removeClass("noshow");
-		})
-	
-	
-	
-		// // 문화비축기지 버튼
-		$(".pop02_btn1").click(function(){
-			return;
-		})
-		$(".pop02_btn2").click(function(){
-			$(".pop3").removeClass("noshow").css("top","0px");
-			$(".pop2").addClass("noshow").css("top","-1000px");
-		})
-		$(".pop02_btn3").click(function(){
-			$(".pop4").removeClass("noshow").css("top","0px");
-			$(".pop2").addClass("noshow").css("top","-1000px");
-		})
-		$(".pop02_btn4").click(function(){
-			$(".pop5").removeClass("noshow").css("top","0px");
-			$(".pop2").addClass("noshow").css("top","-1000px");	
-		})
-		// // 여의도 버튼
-		$(".pop03_btn1").click(function(){
-			$(".pop2").removeClass("noshow").css("top","0px");
-			$(".pop3").addClass("noshow").css("top","-1000px");
-		})
-		$(".pop03_btn2").click(function(){
-			return;
-		})
-		$(".pop03_btn3").click(function(){
-			$(".pop4").removeClass("noshow").css("top","0px");
-			$(".pop3").addClass("noshow").css("top","-1000px");
-		})
-		$(".pop03_btn4").click(function(){
-			$(".pop5").removeClass("noshow").css("top","0px");
-			$(".pop3").addClass("noshow").css("top","-1000px");	
-		})
-		// // 청계천 버튼
-		$(".pop04_btn1").click(function(){
-			$(".pop2").removeClass("noshow").css("top","0px");
-			$(".pop4").addClass("noshow").css("top","-1000px");
-		})
-		$(".pop04_btn2").click(function(){
-			$(".pop3").removeClass("noshow").css("top","0px");
-			$(".pop4").addClass("noshow").css("top","-1000px");
-		})
-		$(".pop04_btn3").click(function(){
-			return;		
-		})
-		$(".pop04_btn4").click(function(){
-			$(".pop5").removeClass("noshow").css("top","0px");
-			$(".pop4").addClass("noshow").css("top","-1000px");	
-		})
-		// // DDP 버튼
-		$(".pop05_btn1").click(function(){
-			$(".pop2").removeClass("noshow").css("top","0px");
-			$(".pop5").addClass("noshow").css("top","-1000px");
-		})
-		$(".pop05_btn2").click(function(){
-			$(".pop3").removeClass("noshow").css("top","0px");
-			$(".pop5").addClass("noshow").css("top","-1000px");
-		})
-		$(".pop05_btn3").click(function(){
-			$(".pop4").removeClass("noshow").css("top","0px");
-			$(".pop5").addClass("noshow").css("top","-1000px");
-		})
-		$(".pop05_btn4").click(function(){
-			return;
-		})
+		
 	})
 // //////////////// //////////////// //////////////// //////////////// //////////////// //////////////
 
