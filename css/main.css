@@ -207,6 +207,14 @@ body {
 
 .char01 {position: absolute;left: 74px;bottom: 393px;width: 90px;height: 100px;z-index: 3;}
 
+/*fw14-16*/
+
+.fw14 {position: absolute;left: 480px;bottom: 723px;width: 72px;height: 72px;z-index: 1;}
+
+.fw15 {position: absolute;left: 610px;bottom: 662px;width: 60px;height: 60px;z-index: 1;}
+
+.fw16 {position: absolute;left: 1080px;bottom: 700px;width: 60px;height: 60px;z-index: 1;}
+
 /*stadium*/
 
 .stadium {position: absolute;left: 680px;bottom: 178px;width: 685px;height: 260px;background: url(../images/scene1/stadium.png) no-repeat left center;z-index: 3;}
@@ -562,7 +570,7 @@ body {
 
 .movie_neon01 {position: absolute;left: 0;bottom: 100px;width: 489px;height: 233px;background: url(../images/scene4/movie_neon1.png) no-repeat left center;z-index: 2;}
 
-.movie_neon02 {position: absolute;left: 0;bottom: 100px;width: 489px;height: 233px;background: url(../images/scene4/movie_neon2.png) no-repeat left center;z-index: 3;animation-name: neonAni;animation-duration: 0.8s;animation-timing-function: linear;animation-iteration-count: infinite;animation-direction: alternate;}
+.movie_neon02 {position: absolute;left: 0;bottom: 100px;width: 489px;height: 233px;background: url(../images/scene4/movie_neon2.png) no-repeat left center;z-index: 3;animation-name: neonAni;animation-duration: 1s;animation-timing-function: ease-in-out;animation-iteration-count: infinite;animation-direction: alternate;}
 
 .movie_clip {position: absolute;left: 30px;bottom: 128px;width: 432px;height: 178px;background: url(../images/scene4/movie_character.png) no-repeat left center;z-index: 4;}
 
