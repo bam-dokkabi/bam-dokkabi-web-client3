@@ -181,7 +181,7 @@ $(function() {
     var map4 = document.getElementById('map4');
 
     var options1 = {
-    	center: new daum.maps.LatLng(37.5709900,126.89413200000001),
+    	center: new daum.maps.LatLng(37.5709900,126.89313200000001),
     	level: 4
     };
 
@@ -249,6 +249,12 @@ $(function() {
   		}
     }
 
+    map1.relayout();
+    map2.relayout();
+    map3.relayout();
+    map4.relayout();
+
+
     // 각각 카테고리  이동하기	
 	// pop02 -wrapper1
 	$(".pop02_wrapper1>.pop_header>ul>li:nth-child(1)>p").click(function(){
@@ -260,6 +266,7 @@ $(function() {
 		$(".pop02_wrapper1,.pop02_wrapper3").addClass("noshow");
 		$(".pop02_wrapper2").removeClass("noshow");
 		map1.relayout();
+		map1.setCenter(markerPosition1);
 	})
 	$(".pop02_wrapper1>.pop_header>ul>li:nth-child(3)>p").click(function(){
 		$(".pop02_wrapper1,.pop02_wrapper2").addClass("noshow");
@@ -301,6 +308,7 @@ $(function() {
 		$(".pop03_wrapper1,.pop03_wrapper3").addClass("noshow");
 		$(".pop03_wrapper2").removeClass("noshow");
 		map2.relayout();
+		map2.setCenter(markerPosition2);
 	})
 	$(".pop03_wrapper1>.pop_header>ul>li:nth-child(3)>p").click(function(){
 		$(".pop03_wrapper1,.pop03_wrapper2").addClass("noshow");
@@ -342,6 +350,7 @@ $(function() {
 		$(".pop04_wrapper1,.pop04_wrapper3").addClass("noshow");
 		$(".pop04_wrapper2").removeClass("noshow");
 		map3.relayout();
+		map3.setCenter(markerPosition3);
 	})
 	$(".pop04_wrapper1>.pop_header>ul>li:nth-child(3)>p").click(function(){
 		$(".pop04_wrapper1,.pop04_wrapper2").addClass("noshow");
@@ -383,6 +392,7 @@ $(function() {
 		$(".pop05_wrapper1,.pop05_wrapper3").addClass("noshow");
 		$(".pop05_wrapper2").removeClass("noshow");
 		map4.relayout();
+		map4.setCenter(markerPosition4);
 	})
 	$(".pop05_wrapper1>.pop_header>ul>li:nth-child(3)>p").click(function(){
 		$(".pop05_wrapper1,.pop05_wrapper2").addClass("noshow");
