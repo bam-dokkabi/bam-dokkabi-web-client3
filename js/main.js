@@ -14,7 +14,7 @@ $(function() {
 		if(!(navigator.appVersion.indexOf("Mac")!=-1)) {
 
 			if(wheelScroll=="noPop"){
-				$(this).stop().animate({scrollLeft: (this.scrollLeft-(delta * 600))}, 10,"linear");
+				$(this).stop().animate({scrollLeft: (this.scrollLeft-(delta * 300))}, 2000,"linear");
 			} else{
 				if(delta<0) {$(".popup").stop().animate({scrollTop:"+=200"},100); deltaWaling="next"; }
 					else {$(".popup").stop().animate({scrollTop:"-=200"},100); deltaWaling="prev"}
@@ -29,8 +29,7 @@ $(function() {
 				}
 				event.preventDefault();
 	 		}	 
-  		} 
-  	);
+  		});
 
 	/*
 		Scene이 바뀌는 인덱스 계산
@@ -206,6 +205,35 @@ $(function() {
     var map3 = new daum.maps.Map(map3, options3);
     var map4 = new daum.maps.Map(map4, options4);
 
+    // 마커가 표시될 위치입니다 
+	var markerPosition1  = new daum.maps.LatLng(37.5709900,126.89313200000001); 
+	var markerPosition2  = new daum.maps.LatLng(37.5308161,126.9283643);
+	var markerPosition3  = new daum.maps.LatLng(37.5691135,126.98116449999998);
+	var markerPosition4  = new daum.maps.LatLng(37.566725,127.00950599999999);
+
+	// 마커를 생성합니다
+	var marker1 = new daum.maps.Marker({
+	    position: markerPosition1
+	});
+
+	var marker2 = new daum.maps.Marker({
+	    position: markerPosition2
+	});
+
+	var marker3 = new daum.maps.Marker({
+	    position: markerPosition3
+	});
+
+	var marker4 = new daum.maps.Marker({
+	    position: markerPosition4
+	});
+
+	// 마커가 지도 위에 표시되도록 설정합니다
+	marker1.setMap(map1);
+	marker2.setMap(map2);
+	marker3.setMap(map3);
+	marker4.setMap(map4);
+
     function scrollBtnOn(scrollLeft) {
     	for(var i=0;i<scrollIdx.length-1;i++) {
   			if(scrollLeft >= scrollIdx[i] && scrollLeft < scrollIdx[i+1]) {
@@ -226,6 +254,7 @@ $(function() {
 	$(".pop02_wrapper1>.pop_header>ul>li:nth-child(1)>p").click(function(){
 		$(".pop02_wrapper2,.pop02_wrapper3").addClass("noshow");
 		$(".pop02_wrapper1").removeClass("noshow");	
+
 	})
 	$(".pop02_wrapper1>.pop_header>ul>li:nth-child(2)>p").click(function(){
 		$(".pop02_wrapper1,.pop02_wrapper3").addClass("noshow");
