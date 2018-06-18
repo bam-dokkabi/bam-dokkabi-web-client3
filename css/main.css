@@ -248,13 +248,13 @@ cursor: pointer;}
 
 /*tent01*/
 
-.tent01 {position: absolute;left: 820px;bottom: 160px;width: 550px;height: 165px;z-index: 4;}
+.tent01 {position: absolute;left: 820px;bottom: 160px;width: 600px;height: 165px;z-index: 4;}
 
-.tent01_01 {position: absolute;left: 0px;bottom: 0px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 4;}
+.tent01_01 {position: absolute;left: 0px;bottom: 0px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 4;}
 
-.tent01_02 {position: absolute;left: 175px;bottom: 0px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 4;}
+.tent01_02 {position: absolute;left: 176px;bottom: 0px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 4;}
 
-.tent01_03 {position: absolute;left: 350px;bottom: 0px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 4;}
+.tent01_03 {position: absolute;left: 352px;bottom: 0px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 4;}
 
 .people03 {position: absolute;left: 945px;bottom: 123px;width: 65px;height: 100px;background: url(../images/main/h03.png) no-repeat left center;z-index: 5;}
 
@@ -307,11 +307,11 @@ cursor: pointer;}
 
 /*tent02*/
 
-.tent02 {position: absolute;left: 1460px;bottom: 100px;width: 350px;height: 165px;z-index: 3;}
+.tent02 {position: absolute;left: 1460px;bottom: 100px;width: 365px;height: 165px;z-index: 3;}
 
-.tent02_01 {position: absolute;left: 0px;bottom: 0px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 4;}
+.tent02_01 {position: absolute;left: 0px;bottom: 0px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 4;}
 
-.tent02_02 {position: absolute;left: 175px;bottom: 0px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 4;}
+.tent02_02 {position: absolute;left: 176px;bottom: 0px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 4;}
 
 /*fw01-03*/
 
@@ -356,11 +356,11 @@ cursor: pointer;}
 
 /*tent03*/
 
-.tent03 {position: absolute;left: 2275px;bottom: 180px;width: 350px;height: 165px;z-index: 3;}
+.tent03 {position: absolute;left: 2275px;bottom: 180px;width: 365px;height: 165px;z-index: 3;}
 
-.tent03_01 {position: absolute;left: 0px;bottom: 0px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
+.tent03_01 {position: absolute;left: 0px;bottom: 0px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
 
-.tent03_02 {position: absolute;left: 175px;bottom: 0px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
+.tent03_02 {position: absolute;left: 176px;bottom: 0px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
 
 /*truck02*/
 
@@ -417,11 +417,11 @@ cursor: pointer;}
 
 /*tent04*/
 
-.tent04 {position: absolute;left: 2678px;bottom: 88px;width: 350px;height: 165px;z-index: 3;}
+.tent04 {position: absolute;left: 2678px;bottom: 88px;width: 365px;height: 165px;z-index: 3;}
 
-.tent04_01 {position: absolute;left: 0px;bottom: 0px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
+.tent04_01 {position: absolute;left: 0px;bottom: 0px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
 
-.tent04_02 {position: absolute;left: 175px;bottom: 0px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
+.tent04_02 {position: absolute;left: 176px;bottom: 0px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
 
 /*people09*/
 
@@ -457,9 +457,9 @@ cursor: pointer;}
 
 .char05 {position: absolute;left: 4169px;bottom: 508px;width: 95px;height: 78px;z-index: 3;}
 
-.tent05 {position: absolute;left: 3780px;bottom: 133px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
+.tent05 {position: absolute;left: 3780px;bottom: 133px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
 
-.tent06 {position: absolute;left: 4230px;bottom: 133px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
+.tent06 {position: absolute;left: 4230px;bottom: 133px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
 
 /*fw08*/
 
@@ -536,13 +536,13 @@ cursor: pointer;}
 
 /*tent07*/
 
-.tent07 {position: absolute;left: 5176px;bottom: 178px;width: 550px;height: 165px;z-index: 2;}
+.tent07 {position: absolute;left: 5176px;bottom: 178px;width: 565px;height: 165px;z-index: 2;}
 
-.tent07_01 {position: absolute;left: 0px;bottom: 0px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
+.tent07_01 {position: absolute;left: 0px;bottom: 0px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
 
-.tent07_02 {position: absolute;left: 175px;bottom: 0px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
+.tent07_02 {position: absolute;left: 176px;bottom: 0px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
 
-.tent07_03 {position: absolute;left: 350px;bottom: 0px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
+.tent07_03 {position: absolute;left: 352px;bottom: 0px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
 
 .people16 {position: absolute;left: 5277px;bottom: 98px;width: 57px;height: 95px;background: url(../images/main/h01.png) no-repeat left center;z-index: 4;}
 
@@ -562,7 +562,7 @@ cursor: pointer;}
 
 /*tent08*/
 
-.tent05 {position: absolute;left: 6026px;bottom: 178px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 2;}
+.tent08 {position: absolute;left: 6026px;bottom: 178px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 2;}
 
 .ddp.road-light {position: absolute;left: 6033px;bottom: 146px;width: 70px;height: 280px;background: url(../images/main/road_light.png) no-repeat left center;z-index: 3;}
 
@@ -602,11 +602,11 @@ cursor: pointer;}
 
 /*tent09*/
 
-.tent09 {position: absolute;left: 6135px;bottom: 90px;width: 350px;height: 165px;z-index: 3;}
+.tent09 {position: absolute;left: 6135px;bottom: 90px;width: 365px;height: 165px;z-index: 3;}
 
-.tent09_01 {position: absolute;left: 0px;bottom: 0px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
+.tent09_01 {position: absolute;left: 0px;bottom: 0px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
 
-.tent09_02 {position: absolute;left: 175px;bottom: 0px;width: 170px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
+.tent09_02 {position: absolute;left: 176px;bottom: 0px;width: 176px;height: 165px;background: url(../images/main/tent.png) no-repeat left center;z-index: 3;}
 
 /*character_ballon*/
 
