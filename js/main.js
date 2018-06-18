@@ -177,7 +177,7 @@ $(function() {
     	window.open('./game.html', '_blank');
     });
 
-    $('#map1').css('z-index', 1000);
+    /*$('#map1').css('z-index', 1000);
 
     var map1 = document.getElementById('map1');
     var map2 = document.getElementById('map2');
@@ -236,7 +236,7 @@ $(function() {
 	marker1.setMap(map1);
 	marker2.setMap(map2);
 	marker3.setMap(map3);
-	marker4.setMap(map4);
+	marker4.setMap(map4);*/
 
     function scrollBtnOn(scrollLeft) {
     	for(var i=0;i<scrollIdx.length-1;i++) {
@@ -253,10 +253,10 @@ $(function() {
   		}
     }
 
-    map1.relayout();
+   /* map1.relayout();
     map2.relayout();
     map3.relayout();
-    map4.relayout();
+    map4.relayout();*/
 
 
     // 각각 카테고리  이동하기	
