@@ -1060,6 +1060,52 @@ $(function(){
 	$(".truck03, .truck03_h").hover(function(){$(".truck03_h").show();}, function(){$(".truck03_h").hide();});
 
 	$(".truck04, .truck04_h").hover(function(){$(".truck04_h").show();}, function(){$(".truck04_h").hide();});
+
+	/*popup char move*/
+	var pcData01=["images/pop01/c01_1.png", "images/pop01/c01_2.png", "images/pop01/c01_3.png", "images/pop01/c01_4.png"];
+
+	var pcData02=["images/pop01/c02_1.png", "images/pop01/c02_2.png", "images/pop01/c02_3.png", "images/pop01/c02_4.png", "images/pop01/c02_5.png"];
+
+	var pcData03=["images/pop01/c03_1.png", "images/pop01/c03_2.png", "images/pop01/c03_3.png", "images/pop01/c03_4.png", "images/pop01/c03_5.png"];
+
+	var pcData04=["images/pop01/c04_1.png", "images/pop01/c04_2.png", "images/pop01/c04_3.png", "images/pop01/c04_4.png", "images/pop01/c04_5.png"];
+
+	var pcIndex01=0;
+	var pcIndex02=0;
+	var pcIndex03=0;
+	var pcIndex04=0;
+
+	var pchar01=setInterval(function(){
+		pcIndex01++;
+		if(pcIndex01==4){
+			pcIndex01=0;
+		}	
+		$(".tacco > img:nth-child(1)").attr("src", pcData01[pcIndex01]);
+	}, 500);
+
+	var pchar02=setInterval(function(){
+		pcIndex02++;
+		if(pcIndex02==5){
+			pcIndex02=0;
+		}	
+		$(".cuke > img:nth-child(1)").attr("src", pcData02[pcIndex02]);
+	}, 500);
+
+	var pchar03=setInterval(function(){
+		pcIndex03++;
+		if(pcIndex03==5){
+			pcIndex03=0;
+		}	
+		$(".tui > img:nth-child(1)").attr("src", pcData03[pcIndex03]);
+	}, 500);
+
+	var pchar04=setInterval(function(){
+		pcIndex04++;
+		if(pcIndex04==5){
+			pcIndex04=0;
+		}	
+		$(".peach > img:nth-child(1)").attr("src", pcData04[pcIndex04]);
+	}, 500);
 })
 
 
