@@ -197,13 +197,11 @@ cursor: pointer;}
 
 .bd01-light2 {position: absolute;left: 80px;bottom: 0px;width: 51px;height: 160px;background: url(../images/scene1/bd01_light.png) no-repeat left center;z-index: 3;animation-name: lightAni02;animation-duration: 4s;animation-timing-function: ease-out;animation-iteration-count: infinite;animation-direction: alternate;}
 
-.bd01-light3 {position: absolute;left: 190px;bottom: 0px;width: 51px;height: 160px;background: url(../images/scene1/bd01_light.png) no-repeat left center;z-index: 3;animation-name: lightAni03;animation-duration: 2s;animation-timing-function: ease-out;animation-iteration-count: infinite;animation-direction: alternate;}
+.bd01-light3 {position: absolute;left: 190px;bottom: 0px;width: 51px;height: 160px;background: url(../images/scene1/bd01_light.png) no-repeat left center;z-index: 3;animation-name: lightAni01;animation-duration: 2s;animation-timing-function: ease-out;animation-iteration-count: infinite;animation-direction: alternate;}
 
 @keyframes lightAni01{0%{opacity: 0;}100%{opacity:1;}}
 
 @keyframes lightAni02{0%{opacity: 1;}100%{opacity:0;}}
-
-@keyframes lightAni03{0%{opacity: 0;}100%{opacity:1;}}
 
 .bd01-title {position: absolute;left: 170px;bottom: 402px;width:285px;height: 49px;background: url(../images/scene1/bd01_title.png) no-repeat left center;z-index: 3;}
 
@@ -239,18 +237,17 @@ cursor: pointer;}
 
 .stadium {position: absolute;left: 680px;bottom: 178px;width: 685px;height: 260px;background: url(../images/scene1/stadium.png) no-repeat left center;z-index: 3;}
 
-.stadium-light1 {position: absolute;left: 780px;bottom: 310px;width: 90px;height: 300px;background: url(../images/scene1/stadium_light01.png) no-repeat left center;z-index: 2;transform-origin:50% 100%;animation-name: lightAni04;animation-duration: 2s;animation-timing-function: linear;animation-iteration-count: infinite;animation-direction: alternate;}
+.stadium-light1 {position: absolute;left: 780px;bottom: 310px;width: 90px;height: 300px;background: url(../images/scene1/stadium_light01.png) no-repeat left center;z-index: 2;transform-origin:50% 100%;animation-name: lightAni03;animation-duration: 2s;animation-timing-function: linear;animation-iteration-count: infinite;animation-direction: alternate;}
 
-.stadium-light2 {position: absolute;left: 760px;bottom: 320px;width: 80px;height: 280px;background: url(../images/scene1/stadium_light02.png) no-repeat left center;z-index: 1;transform-origin:50% 100%;animation-name: lightAni05;animation-duration: 2s;animation-timing-function: linear;animation-iteration-count: infinite;animation-direction: alternate;}
+.stadium-light2 {position: absolute;left: 760px;bottom: 320px;width: 80px;height: 280px;background: url(../images/scene1/stadium_light02.png) no-repeat left center;z-index: 1;transform-origin:50% 100%;animation-name: lightAni04;animation-duration: 2s;animation-timing-function: linear;animation-iteration-count: infinite;animation-direction: alternate;}
 
-.stadium-light3 {position: absolute;left: 1215px;bottom: 320px;width: 90px;height: 300px;background: url(../images/scene1/stadium_light03.png) no-repeat left center;z-index: 1;transform-origin:50% 100%;animation-name: lightAni06;animation-duration: 2s;animation-timing-function: linear;animation-iteration-count: infinite;animation-direction: alternate;}
+.stadium-light3 {position: absolute;left: 1215px;bottom: 320px;width: 90px;height: 300px;background: url(../images/scene1/stadium_light03.png) no-repeat left center;z-index: 1;transform-origin:50% 100%;animation-name: lightAni05;animation-duration: 2s;animation-timing-function: linear;animation-iteration-count: infinite;animation-direction: alternate;}
 
-@keyframes lightAni04{0%{transform: rotate(-35deg);}100%{transform: rotate(40deg);}}
+@keyframes lightAni03{0%{transform: rotate(-35deg);}100%{transform: rotate(40deg);}}
 
-@keyframes lightAni05{0%{transform: rotate(40deg);}100%{transform: rotate(-35deg);}}
+@keyframes lightAni04{0%{transform: rotate(40deg);}100%{transform: rotate(-35deg);}}
 
-@keyframes lightAni06{0%{transform: rotate(-35deg);}100%{transform: rotate(40deg);}}
-
+@keyframes lightAni05{0%{transform: rotate(-35deg);}100%{transform: rotate(40deg);}}
 
 /*tent01*/
 
@@ -275,7 +272,6 @@ cursor: pointer;}
 .truck01 {position: absolute;left: 500px;bottom: 130px;width: 390px;height: 190px;background: url(../images/scene1/truck01.png) no-repeat left center;z-index: 5;cursor: pointer;}
 
 .truck01_h {position: absolute;left: 496px;bottom: 130px;width: 360px;height: 190px;background: url(../images/main/truck_h.png) no-repeat left center;z-index: 5;cursor: pointer;display: none;}
-
 
 /*bd02*/
 
@@ -645,6 +641,28 @@ cursor: pointer;}
 /*character_ballon*/
 
 .char_b {position: absolute;left: 6623px;bottom: 83px;width: 268px;height: 415px;background: url(../images/scene4/character_ballon.png) no-repeat left center;z-index: 3;}
+
+/*stars*/
+
+.star01 {position: absolute;left: 928px;bottom: 775px;width: 30px;height: 30px;z-index: 1;animation-name: lightAni01;animation-duration: 2s;animation-timing-function: ease-out;animation-iteration-count: infinite;animation-direction: alternate;}
+
+.star02 {position: absolute;left: 1490px;bottom: 725px;width: 30px;height: 30px;z-index: 1;animation-name: lightAni01;animation-duration: 2s;animation-timing-function: ease-out;animation-iteration-count: infinite;animation-direction: alternate;}
+
+.star03 {position: absolute;left: 3022px;bottom: 780px;width: 30px;height: 30px;z-index: 1;animation-name: lightAni01;animation-duration: 2s;animation-timing-function: ease-out;animation-iteration-count: infinite;animation-direction: alternate;}
+
+.star04 {position: absolute;left: 3438px;bottom: 745px;width: 30px;height: 30px;z-index: 1;animation-name: lightAni02;animation-duration: 2s;animation-timing-function: ease-out;animation-iteration-count: infinite;animation-direction: alternate;}
+
+.star05 {position: absolute;left: 4120px;bottom: 750px;width: 30px;height: 30px;z-index: 1;animation-name: lightAni01;animation-duration: 2s;animation-timing-function: ease-out;animation-iteration-count: infinite;animation-direction: alternate;}
+
+.star06 {position: absolute;left: 4685px;bottom: 650px;width: 30px;height: 30px;z-index: 1;animation-name: lightAni01;animation-duration: 2s;animation-timing-function: ease-out;animation-iteration-count: infinite;animation-direction: alternate;}
+
+.star07 {position: absolute;left: 4954px;bottom: 760px;width: 30px;height: 30px;z-index: 1;animation-name: lightAni02;animation-duration: 2s;animation-timing-function: ease-out;animation-iteration-count: infinite;animation-direction: alternate;}
+
+.star08 {position: absolute;left: 5632px;bottom: 820px;width: 30px;height: 30px;z-index: 1;animation-name: lightAni01;animation-duration: 2s;animation-timing-function: ease-out;animation-iteration-count: infinite;animation-direction: alternate;}
+
+.star09 {position: absolute;left: 5900px;bottom: 580px;width: 30px;height: 30px;z-index: 1;animation-name: lightAni02;animation-duration: 2s;animation-timing-function: ease-out;animation-iteration-count: infinite;animation-direction: alternate;}
+
+.star10 {position: absolute;left: 6545px;bottom: 690px;width: 30px;height: 30px;z-index: 1;animation-name: lightAni01;animation-duration: 2s;animation-timing-function: ease-out;animation-iteration-count: infinite;animation-direction: alternate;}
 
 /**********************************************************************************************************/
 /**********************************************************************************************************/
