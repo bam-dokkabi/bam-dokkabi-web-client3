@@ -587,6 +587,220 @@ $(function(){
 	/*con01_door move*/
 	$(".con01_h, .con01_detail, .con01_door").hover(function(){$(".con01_door").stop().animate({marginLeft:"45px"});}, function(){$(".con01_door").stop().animate({marginLeft:"0px"});});
 
+	/*people move*/
+	var pData01=["images/main/h01_1.png", "images/main/h01_2.png", "images/main/h01_3.png", "images/main/h01_4.png", "images/main/h01_5.png", "images/main/h01_6.png", "images/main/h01_7.png"];
+
+	var pData0202=["images/main/h02_24.png", "images/main/h02_25.png", "images/main/h02_26.png", "images/main/h02_27.png", "images/main/h02_21.png", "images/main/h02_22.png", "images/main/h02_23.png"];
+
+	var pData0203=["images/main/h02_31.png", "images/main/h02_32.png", "images/main/h02_33.png", "images/main/h02_34.png", "images/main/h02_35.png", "images/main/h02_36.png", "images/main/h02_37.png"];
+
+	var pData03=["images/main/h03_1.png", "images/main/h03_2.png", "images/main/h03_3.png", "images/main/h03_4.png", "images/main/h03_5.png", "images/main/h03_6.png", "images/main/h03_7.png", "images/main/h03_8.png", "images/main/h03_11.png", "images/main/h03_12.png", "images/main/h03_13.png", "images/main/h03_14.png", "images/main/h03_15.png"];
+
+	var pData0402=["images/main/h04_21.png", "images/main/h04_22.png", "images/main/h04_23.png", "images/main/h04_24.png", "images/main/h04_25.png", "images/main/h04_26.png"];
+
+	var pData0501=["images/main/h05_11.png", "images/main/h05_12.png", "images/main/h05_13.png", "images/main/h05_14.png", "images/main/h05_15.png", "images/main/h05_16.png", "images/main/h05_17.png", "images/main/h05_18.png"];
+	
+	var pData0502=["images/main/h05_21.png", "images/main/h05_22.png", "images/main/h05_23.png", "images/main/h05_24.png", "images/main/h05_25.png", "images/main/h05_26.png", "images/main/h05_27.png", "images/main/h05_28.png"];
+
+	var pData06=["images/main/h06_1.png", "images/main/h06_2.png", "images/main/h06_3.png", "images/main/h06_4.png", "images/main/h06_5.png", "images/main/h06_6.png", "images/main/h06_7.png"];
+
+	var pData07=["images/main/h07_1.png", "images/main/h07_2.png", "images/main/h07_3.png", "images/main/h07_4.png", "images/main/h07_5.png", "images/main/h07_6.png", "images/main/h07_7.png", "images/main/h07_8.png", "images/main/h07_9.png", "images/main/h07_10.png"];
+
+	var pData08=["images/main/h08_1.png", "images/main/h08_2.png", "images/main/h08_3.png", "images/main/h08_4.png", "images/main/h08_5.png", "images/main/h08_6.png", "images/main/h08_7.png", "images/main/h08_8.png", "images/main/h08_9.png", "images/main/h08_10.png", "images/main/h08_11.png"];
+
+	var pData1202=["images/main/h09_21.png", "images/main/h09_22.png", "images/main/h09_23.png", "images/main/h09_24.png", "images/main/h09_25.png", "images/main/h09_26.png", "images/main/h09_27.png"];
+
+	var pData13=["images/main/h10_1.png", "images/main/h10_2.png", "images/main/h10_3.png", "images/main/h10_4.png", "images/main/h10_5.png", "images/main/h10_6.png"];
+
+	var pIndex01=0;
+	var pIndex0202=0;
+	var pIndex0203=0;
+	var pIndex03=0;
+	var pIndex0402=0;
+	var pIndex0501=0;
+	var pIndex0502=0;
+	var pIndex06=0;
+	var pIndex07=0;
+	var pIndex08=0;
+	var pIndex1202=0;
+	var pIndex13=0;
+
+	var people01=setInterval(function(){
+		pIndex01++;
+		if(pIndex01==7){
+			pIndex01=0;
+		}	
+		$(".people01 > img").attr("src", pData01[pIndex01]);
+	}, 500);
+
+	var people0202=setInterval(function(){
+		pIndex0202++;
+		if(pIndex0202==7){
+			pIndex0202=0;
+		}	
+		$(".people02_2 > img").attr("src", pData0202[pIndex0202]);
+	}, 500);
+
+	var people0203=setInterval(function(){
+		pIndex0203++;
+		if(pIndex0203==7){
+			pIndex0203=0;
+		}	
+		$(".people02_3 > img").attr("src", pData0203[pIndex0203]);
+	}, 500);
+
+	var people03=setInterval(function(){
+		pIndex03++;
+		if(pIndex03==13){
+			pIndex03=0;
+		}	
+		$(".people03 > img").attr("src", pData03[pIndex03]);
+	}, 500);
+
+	var people0402=setInterval(function(){
+		pIndex0402++;
+		if(pIndex0402==6){
+			pIndex0402=0;
+		}	
+		$(".people04_2 > img").attr("src", pData0402[pIndex0402]);
+	}, 500);
+
+	var people0501=setInterval(function(){
+		pIndex0501++;
+		if(pIndex0501==8){
+			pIndex0501=0;
+		}	
+		$(".people05_1 > img").attr("src", pData0501[pIndex0501]);
+	}, 500);
+
+	var people0502=setInterval(function(){
+		pIndex0502++;
+		if(pIndex0502==8){
+			pIndex0502=0;
+		}	
+		$(".people05_2 > img").attr("src", pData0502[pIndex0502]);
+	}, 500);
+
+	var people06=setInterval(function(){
+		pIndex06++;
+		if(pIndex06==7){
+			pIndex06=0;
+		}	
+		$(".people06 > img").attr("src", pData06[pIndex06]);
+	}, 500);
+
+	var people07=setInterval(function(){
+		pIndex07++;
+		if(pIndex07==10){
+			pIndex07=0;
+		}	
+		$(".people07 > img").attr("src", pData07[pIndex07]);
+	}, 500);
+
+	var people08=setInterval(function(){
+		pIndex08++;
+		if(pIndex08==11){
+			pIndex08=0;
+		}	
+		$(".people08 > img").attr("src", pData08[pIndex08]);
+	}, 500);
+
+	var people0902=setInterval(function(){
+		pIndex0402++;
+		if(pIndex0402==6){
+			pIndex0402=0;
+		}	
+		$(".people09_2 > img").attr("src", pData0402[pIndex0402]);
+	}, 500);
+
+	var people10=setInterval(function(){
+		pIndex03++;
+		if(pIndex03==13){
+			pIndex03=0;
+		}	
+		$(".people10 > img").attr("src", pData03[pIndex03]);
+	}, 500);
+
+	var people1102=setInterval(function(){
+		pIndex0202++;
+		if(pIndex0202==7){
+			pIndex0202=0;
+		}	
+		$(".people11_2 > img").attr("src", pData0202[pIndex0202]);
+	}, 500);
+
+	var people1103=setInterval(function(){
+		pIndex0203++;
+		if(pIndex0203==7){
+			pIndex0203=0;
+		}	
+		$(".people11_3 > img").attr("src", pData0203[pIndex0203]);
+	}, 500);
+
+	var people1202=setInterval(function(){
+		pIndex1202++;
+		if(pIndex1202==7){
+			pIndex1202=0;
+		}	
+		$(".people12_2 > img").attr("src", pData1202[pIndex1202]);
+	}, 500);
+
+	var people13=setInterval(function(){
+		pIndex13++;
+		if(pIndex13==6){
+			pIndex13=0;
+		}	
+		$(".people13 > img").attr("src", pData13[pIndex13]);
+	}, 500);
+
+	var people15=setInterval(function(){
+		pIndex03++;
+		if(pIndex03==13){
+			pIndex03=0;
+		}	
+		$(".people15 > img").attr("src", pData03[pIndex03]);
+	}, 500);
+
+	var people16=setInterval(function(){
+		pIndex01++;
+		if(pIndex01==7){
+			pIndex01=0;
+		}	
+		$(".people16 > img").attr("src", pData01[pIndex01]);
+	}, 500);
+
+	var people1702=setInterval(function(){
+		pIndex0202++;
+		if(pIndex0202==7){
+			pIndex0202=0;
+		}	
+		$(".people17_2 > img").attr("src", pData0202[pIndex0202]);
+	}, 500);
+
+	var people1703=setInterval(function(){
+		pIndex0203++;
+		if(pIndex0203==7){
+			pIndex0203=0;
+		}	
+		$(".people17_3 > img").attr("src", pData0203[pIndex0203]);
+	}, 500);
+
+	var people19=setInterval(function(){
+		pIndex07++;
+		if(pIndex07==10){
+			pIndex07=0;
+		}	
+		$(".people19 > img").attr("src", pData07[pIndex07]);
+	}, 500);
+
+	var people20=setInterval(function(){
+		pIndex08++;
+		if(pIndex08==11){
+			pIndex08=0;
+		}	
+		$(".people20 > img").attr("src", pData08[pIndex08]);
+	}, 500);
+
 	/*char move*/
 	var cData01=["images/main/c01_1.png", "images/main/c01_2.png", "images/main/c01_3.png", "images/main/c01_4.png", "images/main/c01_5.png"];
 
@@ -612,8 +826,7 @@ $(function(){
 	var mLeft06=0;
 	var cIndex07=0;
 	
-
-	var cahr01=setInterval(function(){
+	var char01=setInterval(function(){
 		cIndex01++;
 		if(cIndex01==5){
 			cIndex01=0;
@@ -621,7 +834,7 @@ $(function(){
 		$(".char01 > img").attr("src", cData01[cIndex01]);
 	}, 500);
 
-	var cahr02=setInterval(function(){
+	var char02=setInterval(function(){
 		cIndex02++;
 		if(cIndex02==5){
 			cIndex02=0;
@@ -629,7 +842,7 @@ $(function(){
 		$(".char02 > img").attr("src", cData02[cIndex02]);
 	}, 500);
 
-	var cahr03=setInterval(function(){
+	var char03=setInterval(function(){
 		cIndex03++;
 		if(cIndex03==5){
 			cIndex03=0;
@@ -637,7 +850,7 @@ $(function(){
 		$(".char03 > img").attr("src", cData03[cIndex03]);
 	}, 500);
 
-	var cahr04=setInterval(function(){
+	var char04=setInterval(function(){
 		if(0<=cIndex04&&cIndex04<6){
 			mLeft04-=10;
 			$(".char04 > img").animate({marginLeft: mLeft04+"px"});
@@ -653,7 +866,7 @@ $(function(){
 		}
 	}, 500);
 
-	var cahr05=setInterval(function(){
+	var char05=setInterval(function(){
 		cIndex05++;
 		if(cIndex05==6){
 			cIndex05=0;
@@ -661,7 +874,7 @@ $(function(){
 		$(".char05 > img").attr("src", cData05[cIndex05]);
 	}, 500);
 
-	var cahr06=setInterval(function(){
+	var char06=setInterval(function(){
 		if(0<=cIndex06&&cIndex06<5){
 			mLeft06-=10;
 			$(".char06 > img").animate({marginLeft: mLeft06+"px"});
@@ -677,7 +890,7 @@ $(function(){
 		}
 	}, 500);
 
-	var cahr07=setInterval(function(){
+	var char07=setInterval(function(){
 		cIndex07++;
 		if(cIndex07==5){
 			cIndex07=0;
